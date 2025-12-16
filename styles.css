@@ -39,6 +39,7 @@ body.dark-mode {
   background: transparent;
   border: 1px solid var(--card-border, lightgray);
   border-radius: 5px;
+  overflow: hidden;
   padding: 16px;
   width: 100%;
 }
@@ -61,10 +62,14 @@ body.dark-mode {
 
 .ccss-list {
   list-style: none;
+  overflow: hidden;
   padding: 0;
 }
 
 .ccss-list li {
+  display: flex;
+  align-items: space-between;
+  overflow: hidden;
   padding: 8px 0;
   border-bottom: 1px solid rgba(190, 190, 190, 0.25);
   display: flex;
@@ -80,6 +85,8 @@ body.dark-mode {
   text-decoration: none;
   color: var(--primary-default, dodgerblue);
   font-family: "Roboto Mono", monospace;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 .ccss-remove {
@@ -87,5 +94,6 @@ body.dark-mode {
   cursor: pointer;
   color: var(--remove-button-color);
   font-size: 12px;
+  flex-shrink: 0;
   margin-left: 10px;
 }

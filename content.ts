@@ -35,7 +35,7 @@ function handlePageChange() {
 
 function parseUrl(url: string): Path | null {
   const pattern =
-    /^(?:https?:\/\/)?source\.chromium\.org\/(?<project>[^\/]+)(?:\/(?<repo>.+?)(?:\/\+\/(?<branch>[^:]+):(?<path>[^;]*))?)?\/?(?=[?;]|$)/;
+    /^(?:https?:\/\/)?source\.chromium\.org\/(?<project>[^\/]+)(?:\/(?<repo>.+?)(?:\/\+\/(?<branch>[^:]+):(?<path>[^;?]*))?)?\/?(?=[?;]|$)/;
 
   const match = url.match(pattern);
   if (!match || !match.groups) return null;
