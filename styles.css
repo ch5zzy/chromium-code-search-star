@@ -40,9 +40,7 @@ body.dark-mode {
   border: 1px solid var(--card-border, lightgray);
   border-radius: 5px;
   padding: 16px;
-  margin: 20px;
   width: 100%;
-  max-width: 800px;
 }
 
 .ccss-dashboard.hidden {

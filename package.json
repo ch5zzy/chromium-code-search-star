@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "tsc; cp styles.css ./out/styles.css; cp manifest.json ./out/manifest.json",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.32",
+    "typescript": "^5.9.3"
+  }
+}
