@@ -1,0 +1,95 @@
+body {
+  --shadow: rgba(60, 64, 67, 0.3);
+  --remove-button-color: crimson;
+  --button-hover-color: rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode {
+  --shadow: rgba(195, 191, 188, 0.3);
+  --remove-button-color: tomato;
+  --button-hover-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Star button. */
+.ccss-star-btn {
+  align-items: center;
+  display: inline-flex;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: gray;
+  cursor: pointer;
+  font-size: 16px;
+  height: 24px;
+  justify-content: center;
+  margin-inline-end: 4px;
+  transition: color 0.2s;
+  width: 24px;
+}
+
+.ccss-star-btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+.ccss-star-btn.starred {
+  color: goldenrod;
+}
+
+/* Dashboard. */
+.ccss-dashboard {
+  background: transparent;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px;
+  box-shadow: 0 1px 2px 0 var(--shadow);
+  width: 100%;
+  max-width: 800px;
+}
+
+.ccss-dashboard.hidden {
+  display: none;
+}
+
+.ccss-dashboard h3 {
+  margin-top: 0;
+  color: var(--text-default);
+}
+
+.ccss-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(190, 190, 190, 0.5);
+  margin: 10px 0 4px 0;
+}
+
+.ccss-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ccss-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.25);
+  display: flex;
+  justify-content: space-between;
+}
+
+.ccss-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.ccss-list a {
+  text-decoration: none;
+  color: dodgerblue;
+  font-family: "Roboto Mono", monospace;
+}
+
+.ccss-remove {
+  font-family: "Roboto Mono", monospace;
+  cursor: pointer;
+  color: var(--remove-button-color);
+  font-size: 12px;
+  margin-left: 10px;
+}

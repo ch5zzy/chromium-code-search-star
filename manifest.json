@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Chromium Code Search Star",
+  "version": "1.0",
+  "description": "Star files and folders on source.chromium.org",
+  "permissions": ["storage"],
+  "host_permissions": ["https://source.chromium.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://source.chromium.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
