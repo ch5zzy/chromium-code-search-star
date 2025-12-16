@@ -1,11 +1,10 @@
 body {
-  --shadow: rgba(60, 64, 67, 0.3);
   --remove-button-color: crimson;
   --button-hover-color: rgba(0, 0, 0, 0.05);
+  --star-color: #ffbb00;
 }
 
 body.dark-mode {
-  --shadow: rgba(195, 191, 188, 0.3);
   --remove-button-color: tomato;
   --button-hover-color: rgba(255, 255, 255, 0.05);
 }
@@ -17,7 +16,7 @@ body.dark-mode {
   background: none;
   border: none;
   border-radius: 50%;
-  color: gray;
+  color: var(--text-default);
   cursor: pointer;
   font-size: 16px;
   height: 24px;
@@ -32,17 +31,16 @@ body.dark-mode {
 }
 
 .ccss-star-btn.starred {
-  color: goldenrod;
+  color: var(--star-color);
 }
 
 /* Dashboard. */
 .ccss-dashboard {
   background: transparent;
-  border: 1px solid lightgray;
-  border-radius: 8px;
+  border: 1px solid var(--card-border, lightgray);
+  border-radius: 5px;
   padding: 16px;
   margin: 20px;
-  box-shadow: 0 1px 2px 0 var(--shadow);
   width: 100%;
   max-width: 800px;
 }
@@ -53,7 +51,7 @@ body.dark-mode {
 
 .ccss-dashboard h3 {
   margin-top: 0;
-  color: var(--text-default);
+  color: var(--text-default, black);
 }
 
 .ccss-divider {
@@ -82,7 +80,7 @@ body.dark-mode {
 
 .ccss-list a {
   text-decoration: none;
-  color: dodgerblue;
+  color: var(--primary-default, dodgerblue);
   font-family: "Roboto Mono", monospace;
 }
 
